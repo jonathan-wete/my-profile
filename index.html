@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Page "intelligence": invisible information for browsers, Google and social networks -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] – Profile</title>
+    <meta name="description" content="This is the personal profile of [Your Name]: student, web development beginner and [hobby] enthusiast.">
+
+    <!-- Open Graph: preview card when the link is shared on Facebook, LinkedIn, WhatsApp... -->
+    <meta property="og:title" content="[Your Name] – Profile">
+    <meta property="og:description" content="Student, web development beginner and [hobby] enthusiast.">
+    <meta property="og:image" content="images/profile.jpg">
+
+    <!-- Google Fonts: loaded BEFORE style.css so we can use them in our own CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap">
+
+    <!-- Font Awesome: icon font for the social links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Our own stylesheet, always last -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Fixed sidebar with internal links to each section -->
+    <div class="sidebar">
+      <p class="sidebar-title">[Your Name]</p>
+      <ul>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#webdev">Web Development</a></li>
+        <li><a href="#hobby-two">[Hobby 2]</a></li>
+        <li><a href="#hobby-three">[Hobby 3]</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="page-content">
+      <!-- Container: centers the content with automatic left/right margins -->
+      <div class="container">
+
+        <!-- Introduction -->
+        <div class="card-white" id="about">
+          <h1>Hello, I'm [Your Name] 👋</h1>
+          <img src="images/profile.jpg" alt="Portrait of [Your Name]" id="img-profile" class="img-circle img-shadowed">
+          <p>I'm a [degree] student at [University]. I love <strong>web development</strong>, [hobby 2] and [hobby 3]. This is my very first website, coded from scratch with HTML and CSS.</p>
+          <a href="https://www.lewagon.com" target="_blank" class="btn-blue">Discover Le Wagon</a>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="card-white" id="webdev">
+          <h2>Web Development 💻</h2>
+          <p>I recently started learning <strong>HTML and CSS</strong>. I enjoy turning a blank file into a real page that anyone can open in their browser, and I want to keep building websites and small projects.</p>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="card-white" id="hobby-two">
+          <h2>[Hobby 2] [emoji]</h2>
+          <p>I am passionate about <strong>[Hobby 2]</strong>. [One or two sentences: what you do, since when, and what you like about it.]</p>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="card-white" id="hobby-three">
+          <h2>[Hobby 3] [emoji]</h2>
+          <p>I am passionate about <strong>[Hobby 3]</strong>. [One or two sentences: what you do, since when, and what you like about it.]</p>
+        </div>
+
+        <!-- Footer: social links -->
+        <div class="card-white" id="contact">
+          <h2>Follow me</h2>
+          <ul class="list-inline">
+            <li>
+              <a href="https://github.com/[your-github-username]" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/[your-linkedin]" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/[your-instagram]" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
